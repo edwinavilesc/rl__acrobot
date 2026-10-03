@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "acrobot_dqn"
+version = "1.0.0"
+description = "Acrobot-v1: agente DQN para el Taller 2 de Simulación y Aprendizaje por Refuerzo."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.11"
+
+dependencies = [
+    "gymnasium[classic-control]>=1.0,<2.0",
+    "matplotlib>=3.7",
+    "numpy>=1.24",
+    "torch>=2.1",
+]
+
+[dependency-groups]
+dev = ["ruff>=0.15.5"]
+
+[project.scripts]
+acrobot = "acrobot_dqn.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/acrobot_dqn"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+# dqn_acrobot_v3.py es el archivo con el que se produjeron los resultados y se
+# conserva tal cual: su SHA-256 se cita como identificador de la corrida, de modo
+# que no se reformatea. Pasa las comprobaciones funcionales (F); lo que se silencia
+# aquí es solo estilo de línea.
+"src/acrobot_dqn/dqn_acrobot_v3.py" = ["E401", "E501", "E701", "E702", "E741", "B905", "I001", "N806"]
+# El verificador presenta cada comprobación como una fila de tabla: una por línea,
+# aunque alguna pase de 120 columnas, se lee mejor que partida en varias.
+"verificar_resultados.py" = ["E501"]
+# El notebook reescribe el algoritmo celda a celda, con el mismo formato que
+# dqn_acrobot_v3.py, para que se puedan leer en paralelo. Se le aplican las mismas
+# excepciones de estilo que al archivo que reproduce.
+"notebooks/*.ipynb" = ["E401", "E501", "E701", "E702", "E741", "B905", "I001", "N806"]

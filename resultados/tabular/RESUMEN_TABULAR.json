@@ -1,0 +1,51 @@
+{
+  "descripcion": "Q-learning tabular sobre Acrobot-v1 con el mismo presupuesto que el DQN: 1.200 episodios, gamma 0,99, mismo decaimiento de epsilon y las mismas semillas de evaluacion (10000-10099).",
+  "discretizacion": {
+    "variables": "theta1, theta2 (via atan2), omega1, omega2",
+    "bins_angulo": 12,
+    "bins_velocidad": 10,
+    "estados_totales": 14400,
+    "alpha": 0.1
+  },
+  "seleccion_de_hiperparametros": "barrido_hiperparametros.json: 12 combinaciones (4 rejillas x 3 valores de alpha) con la semilla 42; se eligio la mejor.",
+  "por_semilla": {
+    "42": {
+      "retorno_medio": -166.21,
+      "sd": 45.97,
+      "tasa_terminacion": 1.0,
+      "pasos_medios": 167.21,
+      "estados_visitados": 1600
+    },
+    "43": {
+      "retorno_medio": -205.31,
+      "sd": 53.32,
+      "tasa_terminacion": 1.0,
+      "pasos_medios": 206.31,
+      "estados_visitados": 1532
+    },
+    "44": {
+      "retorno_medio": -214.43,
+      "sd": 63.84,
+      "tasa_terminacion": 1.0,
+      "pasos_medios": 215.43,
+      "estados_visitados": 1565
+    }
+  },
+  "agregado": {
+    "retorno_medio": -195.32,
+    "sd_entre_semillas": 25.62,
+    "terminaciones": 300,
+    "cobertura_media": 10.9
+  },
+  "dqn_mismas_semillas": {
+    "retorno_medio": -79.48,
+    "terminaciones": 300
+  },
+  "presupuesto_quintuplicado": {
+    "episodios": 6000,
+    "retorno_medio": -185.0,
+    "tasa_terminacion": 1.0,
+    "estados_visitados": 1945,
+    "estados_totales": 14400
+  }
+}

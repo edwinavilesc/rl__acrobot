@@ -1,0 +1,68 @@
+{
+  "semillas": [
+    {
+      "seed": 42,
+      "eval_medio": -80.96,
+      "eval_sd": 12.518204925046344,
+      "terminacion": 1.0,
+      "mejores_que_-100": 95,
+      "train_ultimos_100": -85.68,
+      "mejor_episodio": -60.0,
+      "segundos": 3469.14
+    },
+    {
+      "seed": 43,
+      "eval_medio": -79.33,
+      "eval_sd": 14.54429319858702,
+      "terminacion": 1.0,
+      "mejores_que_-100": 91,
+      "train_ultimos_100": -84.85,
+      "mejor_episodio": -61.0,
+      "segundos": 290.21
+    },
+    {
+      "seed": 44,
+      "eval_medio": -78.14,
+      "eval_sd": 10.59637826444641,
+      "terminacion": 1.0,
+      "mejores_que_-100": 94,
+      "train_ultimos_100": -84.59,
+      "mejor_episodio": -60.0,
+      "segundos": 290.55
+    },
+    {
+      "seed": 45,
+      "eval_medio": -82.52,
+      "eval_sd": 29.00068964697219,
+      "terminacion": 1.0,
+      "mejores_que_-100": 95,
+      "train_ultimos_100": -84.31,
+      "mejor_episodio": -60.0,
+      "segundos": 300.43
+    },
+    {
+      "seed": 46,
+      "eval_medio": -78.55,
+      "eval_sd": 10.706719310033227,
+      "terminacion": 1.0,
+      "mejores_que_-100": 95,
+      "train_ultimos_100": -85.75,
+      "mejor_episodio": -61.0,
+      "segundos": 301.99
+    }
+  ],
+  "agregado": {
+    "media_de_medias": -79.9,
+    "sd_entre_semillas": 1.8188595327842096,
+    "sd_dentro_promedio": 15.473257069017038,
+    "rango_medias": [
+      -82.52,
+      -78.14
+    ],
+    "n_episodios_total": 500,
+    "media_global": -79.9,
+    "terminaciones": 500,
+    "mejores_que_-100": 470,
+    "peor_episodio": -345.0
+  }
+}

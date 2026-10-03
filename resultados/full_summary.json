@@ -1,0 +1,82 @@
+{
+  "modo": "full",
+  "env_id": "Acrobot-v1",
+  "config": {
+    "env_id": "Acrobot-v1",
+    "episodes": 1200,
+    "gamma": 0.99,
+    "lr": 0.001,
+    "batch_size": 64,
+    "buffer_size": 100000,
+    "learning_starts": 1000,
+    "target_update_steps": 1000,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay_steps": 60000,
+    "hidden": 128,
+    "max_grad_norm": 10.0,
+    "seed": 42,
+    "eval_episodes": 100
+  },
+  "hardware": {
+    "device": "cpu",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "cuda": false
+  },
+  "versiones": {
+    "python": "3.11.15",
+    "torch": "2.14.0+cu130",
+    "gymnasium": "1.3.0",
+    "numpy": "2.4.4"
+  },
+  "entrenamiento": {
+    "episodios": 1200,
+    "pasos_de_entorno": 158451,
+    "pasos_de_optimizacion": 157452,
+    "segundos": 3469.14,
+    "retorno_mejor_episodio": -60.0,
+    "episodio_del_mejor": 760,
+    "empates_en_el_mejor": 1,
+    "media_ultimos_100": -85.68,
+    "mediana_ultimos_100": -85.0,
+    "media_global": -131.08666666666667,
+    "tasa_terminacion_verdadera": 0.9558333333333333,
+    "tasa_truncacion": 0.045,
+    "tasa_terminacion_ultimos_100": 1.0,
+    "loss_media": 0.26742234544434457,
+    "loss_final_1000": 0.4133225940093398,
+    "grad_norm_media": 4.953059084006887,
+    "grad_norm_max": 19.893686294555664,
+    "epsilon_final": 0.050000000000000044
+  },
+  "evaluacion_greedy": {
+    "episodios": 100,
+    "seeds": "10000-10099 (disjuntas de las de entrenamiento 42-1241)",
+    "segundos": 0.94,
+    "retorno_medio": -80.96,
+    "retorno_mediana": -78.5,
+    "retorno_sd": 12.518204925046344,
+    "retorno_min": -134.0,
+    "retorno_max": -61.0,
+    "ic95": [
+      -83.41356816530907,
+      -78.50643183469091
+    ],
+    "pasos_medios": 81.96,
+    "tasa_terminacion_verdadera": 1.0,
+    "episodios_bajo_umbral_-100": 95
+  },
+  "referencias": {
+    "umbral_oficial_gymnasium": -100.0,
+    "retorno_politica_aleatoria_medido": -500.0,
+    "max_episode_steps": 500
+  },
+  "duracion_total_s": 3471.54,
+  "artefactos": [
+    "dqn_acrobot_1200ep_state_dict.pt",
+    "dqn_learning_curve_1200ep.png",
+    "evaluation_metrics_100ep.json",
+    "training_history_1200ep.json"
+  ]
+}

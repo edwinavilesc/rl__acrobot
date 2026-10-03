@@ -1,0 +1,91 @@
+{
+  "descripcion": "Las cuatro rejillas con alpha=0,1 reentrenadas con las semillas 42, 43 y 44. El barrido original (barrido_hiperparametros.json) usa una sola semilla; esto comprueba cuales de sus diferencias sobreviven a tres. Las semillas de evaluacion son las mismas 10000-10099 en todos los casos.",
+  "episodios": 1200,
+  "semillas": [
+    42,
+    43,
+    44
+  ],
+  "rejillas": [
+    {
+      "rejilla": "8x6",
+      "alpha": 0.1,
+      "celdas": 2304,
+      "retorno_por_semilla": {
+        "42": -186.03,
+        "43": -207.83,
+        "44": -184.85
+      },
+      "retorno_medio": -192.9,
+      "sd_entre_semillas": 12.94,
+      "terminacion_por_semilla": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 0.99
+      },
+      "cobertura_media": 0.1807,
+      "pasos_medios_de_entorno": 370651,
+      "visitas_por_celda_visitada": 890.3
+    },
+    {
+      "rejilla": "12x10",
+      "alpha": 0.1,
+      "celdas": 14400,
+      "retorno_por_semilla": {
+        "42": -166.21,
+        "43": -205.31,
+        "44": -214.43
+      },
+      "retorno_medio": -195.32,
+      "sd_entre_semillas": 25.62,
+      "terminacion_por_semilla": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "cobertura_media": 0.1087,
+      "pasos_medios_de_entorno": 393694,
+      "visitas_por_celda_visitada": 251.5
+    },
+    {
+      "rejilla": "16x12",
+      "alpha": 0.1,
+      "celdas": 36864,
+      "retorno_por_semilla": {
+        "42": -270.72,
+        "43": -258.43,
+        "44": -219.8
+      },
+      "retorno_medio": -249.65,
+      "sd_entre_semillas": 26.57,
+      "terminacion_por_semilla": {
+        "42": 0.89,
+        "43": 0.97,
+        "44": 0.99
+      },
+      "cobertura_media": 0.0868,
+      "pasos_medios_de_entorno": 436681,
+      "visitas_por_celda_visitada": 136.5
+    },
+    {
+      "rejilla": "20x14",
+      "alpha": 0.1,
+      "celdas": 78400,
+      "retorno_por_semilla": {
+        "42": -372.21,
+        "43": -282.49,
+        "44": -337.0
+      },
+      "retorno_medio": -330.57,
+      "sd_entre_semillas": 45.2,
+      "terminacion_por_semilla": {
+        "42": 0.78,
+        "43": 0.91,
+        "44": 0.83
+      },
+      "cobertura_media": 0.0713,
+      "pasos_medios_de_entorno": 476441,
+      "visitas_por_celda_visitada": 85.2
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "descripcion": "DQN frente a Double DQN. Misma red, mismos hiperparametros, mismas semillas; solo cambia como se calcula el objetivo de Bellman.",
+  "medicion_del_sesgo": "V(s0) = max_a Q(s0,a) predicho por la red, frente al retorno descontado (gamma=0,99) que el agente obtiene de verdad desde ese mismo estado inicial.",
+  "dqn": {
+    "retorno_por_semilla": {
+      "42": -80.96,
+      "43": -79.33,
+      "44": -78.14
+    },
+    "retorno_medio": -79.48,
+    "retorno_sd_entre_semillas": 1.42,
+    "sesgo_por_semilla": {
+      "42": -6.78,
+      "43": -7.41,
+      "44": -3.91
+    },
+    "sesgo_medio": -6.03,
+    "terminaciones": 300,
+    "v_predicho_por_semilla": {
+      "42": -62.13,
+      "43": -61.9,
+      "44": -58.07
+    },
+    "retorno_descontado_por_semilla": {
+      "42": -55.35,
+      "43": -54.49,
+      "44": -54.16
+    }
+  },
+  "double_dqn": {
+    "retorno_por_semilla": {
+      "42": -78.42,
+      "43": -78.41,
+      "44": -74.52
+    },
+    "retorno_medio": -77.12,
+    "retorno_sd_entre_semillas": 2.25,
+    "sesgo_por_semilla": {
+      "42": -13.29,
+      "43": -8.35,
+      "44": -14.23
+    },
+    "sesgo_medio": -11.96,
+    "terminaciones": 300,
+    "v_predicho_por_semilla": {
+      "42": -67.46,
+      "43": -62.59,
+      "44": -66.78
+    },
+    "retorno_descontado_por_semilla": {
+      "42": -54.17,
+      "43": -54.24,
+      "44": -52.55
+    }
+  },
+  "diferencia_por_semilla": {
+    "42": 2.54,
+    "43": 0.92,
+    "44": 3.62
+  },
+  "diferencia_media": 2.36,
+  "semillas_en_que_double_mejora": 3
+}

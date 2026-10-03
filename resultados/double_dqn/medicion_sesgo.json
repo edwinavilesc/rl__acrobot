@@ -1,0 +1,416 @@
+{
+  "descripcion": "Sesgo de los valores Q: max_a Q(s,a) frente al retorno descontado real desde s, sobre los 100 episodios de evaluacion (semillas 10000-10099), agrupado por cuantos pasos le faltan al agente para alcanzar la meta.",
+  "advertencia": "El retorno real esta acotado por los pasos restantes: con n pasos por delante no puede superar -(1-gamma^(n-1))/(1-gamma). En los tramos lejanos esa cota cae por debajo del valor minimo que la red predice, de modo que el signo positivo del sesgo esta forzado por la construccion de la medida y no puede leerse como evidencia de sobreestimacion.",
+  "gamma": 0.99,
+  "por_metodo_y_semilla": {
+    "dqn_42": {
+      "estados_visitados": 8196,
+      "sesgo_global": -4.86,
+      "sesgo_en_s0": -6.78,
+      "v_predicho_en_s0": -62.13,
+      "retorno_real_desde_s0": -55.35,
+      "por_pasos_restantes": {
+        "0-19": {
+          "n": 1900,
+          "valor_predicho": -15.51,
+          "retorno_real": -8.51,
+          "sesgo_medio": -7.0,
+          "cota_superior_del_retorno_real": 0.0
+        },
+        "20-49": {
+          "n": 3000,
+          "valor_predicho": -33.47,
+          "retorno_real": -28.32,
+          "sesgo_medio": -5.15,
+          "cota_superior_del_retorno_real": -17.38
+        },
+        "50-79": {
+          "n": 2699,
+          "valor_predicho": -51.11,
+          "retorno_real": -46.4,
+          "sesgo_medio": -4.71,
+          "cota_superior_del_retorno_real": -38.89
+        },
+        "80-89": {
+          "n": 380,
+          "valor_predicho": -57.05,
+          "retorno_real": -56.45,
+          "sesgo_medio": -0.6,
+          "cota_superior_del_retorno_real": -54.8
+        },
+        "90-99": {
+          "n": 114,
+          "valor_predicho": -55.11,
+          "retorno_real": -60.53,
+          "sesgo_medio": 5.42,
+          "cota_superior_del_retorno_real": -59.12
+        },
+        "100+": {
+          "n": 103,
+          "valor_predicho": -55.55,
+          "retorno_real": -67.41,
+          "sesgo_medio": 11.86,
+          "cota_superior_del_retorno_real": -63.03
+        }
+      }
+    },
+    "dqn_43": {
+      "estados_visitados": 8033,
+      "sesgo_global": -4.35,
+      "sesgo_en_s0": -7.41,
+      "v_predicho_en_s0": -61.9,
+      "retorno_real_desde_s0": -54.49,
+      "por_pasos_restantes": {
+        "0-19": {
+          "n": 1900,
+          "valor_predicho": -16.25,
+          "retorno_real": -8.51,
+          "sesgo_medio": -7.74,
+          "cota_superior_del_retorno_real": 0.0
+        },
+        "20-49": {
+          "n": 3000,
+          "valor_predicho": -32.85,
+          "retorno_real": -28.32,
+          "sesgo_medio": -4.53,
+          "cota_superior_del_retorno_real": -17.38
+        },
+        "50-79": {
+          "n": 2476,
+          "valor_predicho": -49.58,
+          "retorno_real": -45.96,
+          "sesgo_medio": -3.63,
+          "cota_superior_del_retorno_real": -38.89
+        },
+        "80-89": {
+          "n": 359,
+          "valor_predicho": -54.97,
+          "retorno_real": -56.58,
+          "sesgo_medio": 1.61,
+          "cota_superior_del_retorno_real": -54.8
+        },
+        "90-99": {
+          "n": 181,
+          "valor_predicho": -56.3,
+          "retorno_real": -60.53,
+          "sesgo_medio": 4.23,
+          "cota_superior_del_retorno_real": -59.12
+        },
+        "100+": {
+          "n": 117,
+          "valor_predicho": -57.74,
+          "retorno_real": -65.81,
+          "sesgo_medio": 8.07,
+          "cota_superior_del_retorno_real": -63.03
+        }
+      }
+    },
+    "dqn_44": {
+      "estados_visitados": 7914,
+      "sesgo_global": -3.65,
+      "sesgo_en_s0": -3.91,
+      "v_predicho_en_s0": -58.07,
+      "retorno_real_desde_s0": -54.16,
+      "por_pasos_restantes": {
+        "0-19": {
+          "n": 1900,
+          "valor_predicho": -13.72,
+          "retorno_real": -8.51,
+          "sesgo_medio": -5.21,
+          "cota_superior_del_retorno_real": 0.0
+        },
+        "20-49": {
+          "n": 3000,
+          "valor_predicho": -32.73,
+          "retorno_real": -28.32,
+          "sesgo_medio": -4.41,
+          "cota_superior_del_retorno_real": -17.38
+        },
+        "50-79": {
+          "n": 2599,
+          "valor_predicho": -49.06,
+          "retorno_real": -46.12,
+          "sesgo_medio": -2.94,
+          "cota_superior_del_retorno_real": -38.89
+        },
+        "80-89": {
+          "n": 268,
+          "valor_predicho": -53.63,
+          "retorno_real": -56.49,
+          "sesgo_medio": 2.85,
+          "cota_superior_del_retorno_real": -54.8
+        },
+        "90-99": {
+          "n": 95,
+          "valor_predicho": -53.77,
+          "retorno_real": -60.49,
+          "sesgo_medio": 6.72,
+          "cota_superior_del_retorno_real": -59.12
+        },
+        "100+": {
+          "n": 52,
+          "valor_predicho": -56.03,
+          "retorno_real": -64.68,
+          "sesgo_medio": 8.66,
+          "cota_superior_del_retorno_real": -63.03
+        }
+      }
+    },
+    "double_dqn_42": {
+      "estados_visitados": 7942,
+      "sesgo_global": -5.93,
+      "sesgo_en_s0": -13.29,
+      "v_predicho_en_s0": -67.46,
+      "retorno_real_desde_s0": -54.17,
+      "por_pasos_restantes": {
+        "0-19": {
+          "n": 1900,
+          "valor_predicho": -14.18,
+          "retorno_real": -8.51,
+          "sesgo_medio": -5.67,
+          "cota_superior_del_retorno_real": 0.0
+        },
+        "20-49": {
+          "n": 3000,
+          "valor_predicho": -33.24,
+          "retorno_real": -28.32,
+          "sesgo_medio": -4.92,
+          "cota_superior_del_retorno_real": -17.38
+        },
+        "50-79": {
+          "n": 2518,
+          "valor_predicho": -54.18,
+          "retorno_real": -46.02,
+          "sesgo_medio": -8.16,
+          "cota_superior_del_retorno_real": -38.89
+        },
+        "80-89": {
+          "n": 322,
+          "valor_predicho": -60.76,
+          "retorno_real": -56.59,
+          "sesgo_medio": -4.17,
+          "cota_superior_del_retorno_real": -54.8
+        },
+        "90-99": {
+          "n": 112,
+          "valor_predicho": -59.68,
+          "retorno_real": -60.66,
+          "sesgo_medio": 0.98,
+          "cota_superior_del_retorno_real": -59.12
+        },
+        "100+": {
+          "n": 90,
+          "valor_predicho": -62.87,
+          "retorno_real": -65.79,
+          "sesgo_medio": 2.92,
+          "cota_superior_del_retorno_real": -63.03
+        }
+      }
+    },
+    "double_dqn_43": {
+      "estados_visitados": 7941,
+      "sesgo_global": -4.78,
+      "sesgo_en_s0": -8.35,
+      "v_predicho_en_s0": -62.59,
+      "retorno_real_desde_s0": -54.24,
+      "por_pasos_restantes": {
+        "0-19": {
+          "n": 1900,
+          "valor_predicho": -12.92,
+          "retorno_real": -8.51,
+          "sesgo_medio": -4.41,
+          "cota_superior_del_retorno_real": 0.0
+        },
+        "20-49": {
+          "n": 3000,
+          "valor_predicho": -33.49,
+          "retorno_real": -28.32,
+          "sesgo_medio": -5.18,
+          "cota_superior_del_retorno_real": -17.38
+        },
+        "50-79": {
+          "n": 2721,
+          "valor_predicho": -52.9,
+          "retorno_real": -46.41,
+          "sesgo_medio": -6.5,
+          "cota_superior_del_retorno_real": -38.89
+        },
+        "80-89": {
+          "n": 150,
+          "valor_predicho": -52.84,
+          "retorno_real": -56.22,
+          "sesgo_medio": 3.38,
+          "cota_superior_del_retorno_real": -54.8
+        },
+        "90-99": {
+          "n": 54,
+          "valor_predicho": -45.3,
+          "retorno_real": -60.73,
+          "sesgo_medio": 15.43,
+          "cota_superior_del_retorno_real": -59.12
+        },
+        "100+": {
+          "n": 116,
+          "valor_predicho": -50.01,
+          "retorno_real": -69.58,
+          "sesgo_medio": 19.57,
+          "cota_superior_del_retorno_real": -63.03
+        }
+      }
+    },
+    "double_dqn_44": {
+      "estados_visitados": 7552,
+      "sesgo_global": -10.08,
+      "sesgo_en_s0": -14.23,
+      "v_predicho_en_s0": -66.78,
+      "retorno_real_desde_s0": -52.55,
+      "por_pasos_restantes": {
+        "0-19": {
+          "n": 1900,
+          "valor_predicho": -17.24,
+          "retorno_real": -8.51,
+          "sesgo_medio": -8.73,
+          "cota_superior_del_retorno_real": 0.0
+        },
+        "20-49": {
+          "n": 3000,
+          "valor_predicho": -37.76,
+          "retorno_real": -28.32,
+          "sesgo_medio": -9.44,
+          "cota_superior_del_retorno_real": -17.38
+        },
+        "50-79": {
+          "n": 2436,
+          "valor_predicho": -57.98,
+          "retorno_real": -45.78,
+          "sesgo_medio": -12.2,
+          "cota_superior_del_retorno_real": -38.89
+        },
+        "80-89": {
+          "n": 179,
+          "valor_predicho": -63.62,
+          "retorno_real": -56.48,
+          "sesgo_medio": -7.13,
+          "cota_superior_del_retorno_real": -54.8
+        },
+        "90-99": {
+          "n": 37,
+          "valor_predicho": -65.05,
+          "retorno_real": -60.24,
+          "sesgo_medio": -4.81,
+          "cota_superior_del_retorno_real": -59.12
+        }
+      }
+    }
+  },
+  "agregado": {
+    "dqn": {
+      "sesgo_en_s0": -6.03,
+      "sesgo_global": -4.29,
+      "por_tramo": {
+        "0-19": {
+          "corridas": 3,
+          "n_total": 5700,
+          "valor_predicho": -15.16,
+          "retorno_real": -8.51,
+          "sesgo_medio": -6.65,
+          "cota_superior_del_retorno_real": 0.0
+        },
+        "20-49": {
+          "corridas": 3,
+          "n_total": 9000,
+          "valor_predicho": -33.02,
+          "retorno_real": -28.32,
+          "sesgo_medio": -4.7,
+          "cota_superior_del_retorno_real": -17.38
+        },
+        "50-79": {
+          "corridas": 3,
+          "n_total": 7774,
+          "valor_predicho": -49.92,
+          "retorno_real": -46.16,
+          "sesgo_medio": -3.76,
+          "cota_superior_del_retorno_real": -38.89
+        },
+        "80-89": {
+          "corridas": 3,
+          "n_total": 1007,
+          "valor_predicho": -55.22,
+          "retorno_real": -56.51,
+          "sesgo_medio": 1.29,
+          "cota_superior_del_retorno_real": -54.8
+        },
+        "90-99": {
+          "corridas": 3,
+          "n_total": 390,
+          "valor_predicho": -55.06,
+          "retorno_real": -60.52,
+          "sesgo_medio": 5.46,
+          "cota_superior_del_retorno_real": -59.12
+        },
+        "100+": {
+          "corridas": 3,
+          "n_total": 272,
+          "valor_predicho": -56.44,
+          "retorno_real": -65.97,
+          "sesgo_medio": 9.53,
+          "cota_superior_del_retorno_real": -63.03
+        }
+      }
+    },
+    "double_dqn": {
+      "sesgo_en_s0": -11.96,
+      "sesgo_global": -6.93,
+      "por_tramo": {
+        "0-19": {
+          "corridas": 3,
+          "n_total": 5700,
+          "valor_predicho": -14.78,
+          "retorno_real": -8.51,
+          "sesgo_medio": -6.27,
+          "cota_superior_del_retorno_real": 0.0
+        },
+        "20-49": {
+          "corridas": 3,
+          "n_total": 9000,
+          "valor_predicho": -34.83,
+          "retorno_real": -28.32,
+          "sesgo_medio": -6.51,
+          "cota_superior_del_retorno_real": -17.38
+        },
+        "50-79": {
+          "corridas": 3,
+          "n_total": 7675,
+          "valor_predicho": -55.02,
+          "retorno_real": -46.07,
+          "sesgo_medio": -8.95,
+          "cota_superior_del_retorno_real": -38.89
+        },
+        "80-89": {
+          "corridas": 3,
+          "n_total": 651,
+          "valor_predicho": -59.07,
+          "retorno_real": -56.43,
+          "sesgo_medio": -2.64,
+          "cota_superior_del_retorno_real": -54.8
+        },
+        "90-99": {
+          "corridas": 3,
+          "n_total": 203,
+          "valor_predicho": -56.68,
+          "retorno_real": -60.54,
+          "sesgo_medio": 3.87,
+          "cota_superior_del_retorno_real": -59.12
+        },
+        "100+": {
+          "corridas": 2,
+          "n_total": 206,
+          "valor_predicho": -56.44,
+          "retorno_real": -67.69,
+          "sesgo_medio": 11.25,
+          "cota_superior_del_retorno_real": -63.03
+        }
+      }
+    }
+  }
+}

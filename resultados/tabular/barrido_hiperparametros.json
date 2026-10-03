@@ -1,0 +1,122 @@
+[
+ {
+  "bins_angulo": 8,
+  "bins_velocidad": 6,
+  "alpha": 0.1,
+  "eval_retorno": -186.03,
+  "eval_terminacion": 1.0,
+  "train_ultimos_100": -301.33,
+  "estados_visitados": 436,
+  "estados_totales": 2304
+ },
+ {
+  "bins_angulo": 8,
+  "bins_velocidad": 6,
+  "alpha": 0.3,
+  "eval_retorno": -325.93,
+  "eval_terminacion": 0.94,
+  "train_ultimos_100": -255.27,
+  "estados_visitados": 410,
+  "estados_totales": 2304
+ },
+ {
+  "bins_angulo": 8,
+  "bins_velocidad": 6,
+  "alpha": 0.5,
+  "eval_retorno": -424.37,
+  "eval_terminacion": 0.78,
+  "train_ultimos_100": -300.93,
+  "estados_visitados": 410,
+  "estados_totales": 2304
+ },
+ {
+  "bins_angulo": 12,
+  "bins_velocidad": 10,
+  "alpha": 0.1,
+  "eval_retorno": -166.21,
+  "eval_terminacion": 1.0,
+  "train_ultimos_100": -282.84,
+  "estados_visitados": 1600,
+  "estados_totales": 14400
+ },
+ {
+  "bins_angulo": 12,
+  "bins_velocidad": 10,
+  "alpha": 0.3,
+  "eval_retorno": -325.37,
+  "eval_terminacion": 0.95,
+  "train_ultimos_100": -352.9,
+  "estados_visitados": 1589,
+  "estados_totales": 14400
+ },
+ {
+  "bins_angulo": 12,
+  "bins_velocidad": 10,
+  "alpha": 0.5,
+  "eval_retorno": -347.23,
+  "eval_terminacion": 0.92,
+  "train_ultimos_100": -396.98,
+  "estados_visitados": 1545,
+  "estados_totales": 14400
+ },
+ {
+  "bins_angulo": 16,
+  "bins_velocidad": 12,
+  "alpha": 0.1,
+  "eval_retorno": -270.72,
+  "eval_terminacion": 0.89,
+  "train_ultimos_100": -310.74,
+  "estados_visitados": 3180,
+  "estados_totales": 36864
+ },
+ {
+  "bins_angulo": 16,
+  "bins_velocidad": 12,
+  "alpha": 0.3,
+  "eval_retorno": -372.52,
+  "eval_terminacion": 0.79,
+  "train_ultimos_100": -320.58,
+  "estados_visitados": 3288,
+  "estados_totales": 36864
+ },
+ {
+  "bins_angulo": 16,
+  "bins_velocidad": 12,
+  "alpha": 0.5,
+  "eval_retorno": -288.96,
+  "eval_terminacion": 0.96,
+  "train_ultimos_100": -356.16,
+  "estados_visitados": 3142,
+  "estados_totales": 36864
+ },
+ {
+  "bins_angulo": 20,
+  "bins_velocidad": 14,
+  "alpha": 0.1,
+  "eval_retorno": -372.21,
+  "eval_terminacion": 0.78,
+  "train_ultimos_100": -353.86,
+  "estados_visitados": 5563,
+  "estados_totales": 78400
+ },
+ {
+  "bins_angulo": 20,
+  "bins_velocidad": 14,
+  "alpha": 0.3,
+  "eval_retorno": -315.84,
+  "eval_terminacion": 0.91,
+  "train_ultimos_100": -278.88,
+  "estados_visitados": 5844,
+  "estados_totales": 78400
+ },
+ {
+  "bins_angulo": 20,
+  "bins_velocidad": 14,
+  "alpha": 0.5,
+  "eval_retorno": -326.51,
+  "eval_terminacion": 0.97,
+  "train_ultimos_100": -366.63,
+  "estados_visitados": 5753,
+  "estados_totales": 78400
+ }
+]

@@ -1,0 +1,39 @@
+{
+  "descripcion": "Ablacion: buf.push(..., terminated or truncated). Todo lo demas identico.",
+  "semillas": {
+    "42": {
+      "entrenamiento_media_ultimos_100": -83.54,
+      "entrenamiento_sd_ultimos_100": 13.710145178227723,
+      "episodios_truncados": 41,
+      "evaluacion_retorno_medio": -80.62,
+      "evaluacion_sd": 16.32360873153366,
+      "evaluacion_tasa_terminacion": 1.0,
+      "evaluacion_mejores_que_-100": 93
+    },
+    "43": {
+      "entrenamiento_media_ultimos_100": -82.1,
+      "entrenamiento_sd_ultimos_100": 18.35150614466774,
+      "episodios_truncados": 36,
+      "evaluacion_retorno_medio": -78.87,
+      "evaluacion_sd": 11.561565550555773,
+      "evaluacion_tasa_terminacion": 1.0,
+      "evaluacion_mejores_que_-100": 97
+    },
+    "44": {
+      "entrenamiento_media_ultimos_100": -88.39,
+      "entrenamiento_sd_ultimos_100": 18.989574492177002,
+      "episodios_truncados": 41,
+      "evaluacion_retorno_medio": -134.05,
+      "evaluacion_sd": 137.68771392414274,
+      "evaluacion_tasa_terminacion": 0.88,
+      "evaluacion_mejores_que_-100": 81
+    }
+  },
+  "agregado": {
+    "retorno_medio": -97.84666666666668,
+    "sd_entre_semillas": 31.365213746016998,
+    "peor_semilla": -134.05,
+    "mejor_semilla": -78.87,
+    "terminaciones_totales": 288
+  }
+}

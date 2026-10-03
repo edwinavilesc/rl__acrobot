@@ -1,0 +1,88 @@
+{
+  "declarado": {
+    "cos theta1": [
+      -1,
+      1
+    ],
+    "sen theta1": [
+      -1,
+      1
+    ],
+    "cos theta2": [
+      -1,
+      1
+    ],
+    "sen theta2": [
+      -1,
+      1
+    ],
+    "omega1": [
+      -12.566370614359172,
+      12.566370614359172
+    ],
+    "omega2": [
+      -28.274333882308138,
+      28.274333882308138
+    ]
+  },
+  "cos theta1": {
+    "aleatoria": [
+      -0.719,
+      1.0
+    ],
+    "entrenada": [
+      -1.0,
+      1.0
+    ]
+  },
+  "sen theta1": {
+    "aleatoria": [
+      -1.0,
+      1.0
+    ],
+    "entrenada": [
+      -1.0,
+      1.0
+    ]
+  },
+  "cos theta2": {
+    "aleatoria": [
+      -1.0,
+      1.0
+    ],
+    "entrenada": [
+      -1.0,
+      1.0
+    ]
+  },
+  "sen theta2": {
+    "aleatoria": [
+      -1.0,
+      1.0
+    ],
+    "entrenada": [
+      -1.0,
+      1.0
+    ]
+  },
+  "omega1": {
+    "aleatoria": [
+      -5.017,
+      4.914
+    ],
+    "entrenada": [
+      -6.105,
+      6.684
+    ]
+  },
+  "omega2": {
+    "aleatoria": [
+      -8.229,
+      8.191
+    ],
+    "entrenada": [
+      -12.298,
+      11.621
+    ]
+  }
+}
